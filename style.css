@@ -70,7 +70,6 @@ section h3{
     box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     text-align: justify;
-    
 }
 .pl-img img{
     width: 90%;
@@ -163,41 +162,179 @@ footer{
 }
 
 /* Media Query */
-@media only screen and (max-wide:688px) {
-
-    section{
-        width: 680px;
+@media only screen and (max-width:415px) {
+    body{margin: 0px;
+        padding: 0px;
+        font-family: 'Poppins', sans-serif;
+    
     }
-    section h3{
-        font-size: 30px;
-
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* justify-content: space-between; */
+        width: 100%;
+        height: 350px;
+        background-color: rgb(94, 94, 233);
     }
-    .logo{
-        margin: 2px;
-        justify-content: center;
+    header:hover .logo img{
+        transform: scalex(-1);
+        transition: transform 2s linear;
+    }
+    .title-bar h3{
+        color: rgb(253, 253, 253);
+        margin: 30px 0px 10px 0px;
+        font-size: 27px;
+        padding-left: 4%;
+    }
+    .title-bar a, #watch{
+        font-size: 15px;
+        margin-left: 7%;
+        text-decoration: none;
+        background-color: crimson;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color: rgb(240, 240, 240);
     }
     .logo img{
         position: relative;
-        top: 20%;
+        top: 8%;
         left: 10%;
-        width: 80%;
-        position: relative;
+        width: 50%;
+    }
+    
+    /*--------------------------
+     Players Profile 
+    -------------------------- */
+    
+    section{
+        width: 100%;
+        margin: 30px 5px;
+    }
+    section h3{
+        font-size: 25px;
+        color: blue;
+        margin-bottom: 10px;
     }
     .players{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: .5%;
     }
+    .player{
+        display: flex;
+        width: 68%;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 1px 18px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        text-align: justify;
+        
+    }
+    .pl-img img{
+        width: 90%;
+        padding: 2% 5% 0px 5%;
+    }
+    .pl-info{
+        padding: 0px 2%;
+    }
+    .pl-info p{
+        font-size: 13px;
+    }
+    
+    /* -----------------
+    Highlights
+    ----------------- */
+    
+    .highlights{
+        width: 68%;
+        margin-top: 300px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hg-title{
+        width: 100%;
+        padding: 0px 2%;
+    }
+    .hg-title p{
+        font-size: 13px;
+        text-align: justify;
+    }
     .hg-title h3{
-        font-size: 20px;
+        font-size: 25px;
+        padding: 0px 2%;
+    }
+    .hg-image img{
+        padding: 0px 3px 0px 3px;
+        width: 98%;
+        position: relative;
+        top: 20px;
+    }
+    
+    /* --------------------------
+    Our Videos
+    -------------------------- */
+    .videos{
+        width: 98%;
+    }
+    .vid-title{
+        width: 67%;
+        text-align: center;
+        margin: 0px 3px 30px 3px;
+    }
+    .vid-title h3{
+        /* margin: 0px 1%; */
+    }
+    .vid-title p{
+        background-color: #cdbd7e;
+        border-radius: 3px;
     }
     .video{
+        width: 80%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
-        justify-items: center;
+        justify-items: start;
     }
-}
+    .video iframe{
+        width: 280px;
+        height: 160px;
+    }
+    
+    /* --------------------------
+    Gallery
+    -------------------------- */
+    .gallery{
+        width: 68%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+    .gallery img{
+        height: 100%;
+        width: 100%;
+    }
+    .gallery img:hover{
+        transform: scale(1.2);
+        transition: transform 1s ease-in-out;
+    }
+    
+    /* --------------------------
+    Footer
+    -------------------------- */
+    
+    footer{
+        width: 70%;
+        margin: 0px 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-img img{
+        width: 40%;
+        margin: 0px;
+        padding: 0px 30%;
+    }
 
 
 @media only screen and (min-wide:689px and max-wide: 992px) {
