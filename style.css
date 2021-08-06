@@ -2,6 +2,41 @@
 
 /* Common Style  */
 
+@media only screen and (max-wide:688px) {
+    section h3{
+        font-size: 40px;
+
+    }
+    .logo{
+        margin: 2px;
+        justify-content: center;
+    }
+    .logo img{
+        position: relative;
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        position: relative;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: .5%;
+    }
+    .hg-title h3{
+        font-size: 20px;
+    }
+    .video{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+    }
+}
+
+
+
+
 body{
     font-family: 'Poppins', sans-serif;
 
@@ -35,7 +70,6 @@ header:hover .logo img{
 .logo{
     margin: 2px;
     justify-content: center;
-    /* background-color: burlywood; */
 }
 .logo img{
     position: relative;
@@ -163,11 +197,39 @@ footer{
 }
 
 /* Media Query */
-@media only screen and (max-wide:688px) {
-    
-}
+
 @media only screen and (min-wide:689px and max-wide: 992px) {
-    
+    section h3{
+        font-size: 40px;
+
+    }
+    .logo{
+        margin: 2px;
+        justify-content: center;
+    }
+    .logo img{
+        position: relative;
+        top: 20%;
+        left: 10%;
+        width: 70%;
+        position: relative;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: .5%;
+    }
+    .hg-title h3{
+        font-size: 20px;
+    }
+    .video{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+    }
+}
+
 }
 
 
