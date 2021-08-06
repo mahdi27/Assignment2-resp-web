@@ -2,41 +2,6 @@
 
 /* Common Style  */
 
-@media only screen and (max-wide:688px) {
-    section h3{
-        font-size: 40px;
-
-    }
-    .logo{
-        margin: 2px;
-        justify-content: center;
-    }
-    .logo img{
-        position: relative;
-        top: 20%;
-        left: 10%;
-        width: 80%;
-        position: relative;
-    }
-    .players{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: .5%;
-    }
-    .hg-title h3{
-        font-size: 20px;
-    }
-    .video{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
-        justify-items: center;
-    }
-}
-
-
-
-
 body{
     font-family: 'Poppins', sans-serif;
 
@@ -183,6 +148,7 @@ Gallery
 /* --------------------------
 Footer
 -------------------------- */
+
 footer{
     width: 90%;
     margin: 0px 5%;
@@ -197,6 +163,42 @@ footer{
 }
 
 /* Media Query */
+@media only screen and (max-wide:688px) {
+
+    section{
+        width: 680px;
+    }
+    section h3{
+        font-size: 30px;
+
+    }
+    .logo{
+        margin: 2px;
+        justify-content: center;
+    }
+    .logo img{
+        position: relative;
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        position: relative;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: .5%;
+    }
+    .hg-title h3{
+        font-size: 20px;
+    }
+    .video{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+    }
+}
+
 
 @media only screen and (min-wide:689px and max-wide: 992px) {
     section h3{
@@ -230,6 +232,5 @@ footer{
     }
 }
 
-}
 
 
