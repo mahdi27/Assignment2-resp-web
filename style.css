@@ -276,13 +276,13 @@
         position: relative;
         top: 8%;
         left: 15%;
-        width: 80%;
+        width: 65%;
         position: relative;
     }
     .players{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: .5%;
+        grid-gap: 2%;
     }
     .hg-title{
         padding: 0px 5%;
@@ -290,10 +290,7 @@
     .hg-title h3{
         font-size: 35px;
     }
-    .hg-image{
-        position: relative;
-        position: ;
-    }
+
     .hg-image img{
         padding: 0px 0px 0px 0%;
         width: 100%;
